@@ -1,0 +1,79 @@
+.crocOptions #icon-crocodoc {
+    
+    background: transparent url(../images/icons32.png?) no-repeat -492px -5px
+}
+.crocOptions h3 {
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+.crocOptions h4 {
+	margin: 5px 10px;
+}
+.crocOptions p {
+	margin: 5px 20px 0px 20px;
+}
+.crocOptions .checkbox {
+	margin: 4px 4px 4px 30px;
+}
+.crocOptions hr {
+	color: #fff;
+}
+
+#croc-upload-field{
+	margin: 15px 0px;
+}
+#croc-upload-field .croc-detach-button {
+    float: right;
+    margin-top: 10px;
+}
+#croc-upload-field .croc-attach-button {
+    line-height: 28px;
+    margin-left: 10px;
+}
+#croc-upload-field .croc-attachment-thumb,
+#croc-upload-field .croc-attachment-title {
+    float:left;
+}
+#croc-upload-field .croc-attachment-thumb {
+    margin-left: 25px;
+}
+#croc-upload-field .croc-attachment-title {
+    margin: 12px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#croc-upload-field .croc-attachment-options {
+    float:right;
+    clear:both;
+    margin-top: 9px;
+}
+#croc-upload-field .croc-attachment-options .check-label{
+    margin-right: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+iframe.croc_window {
+    max-width:99999px;
+}
+
+
+
+.cf:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.cf {
+	display: inline-block;
+}
+html[xmlns] .cf {
+	display: block;
+}
+* html .cf {
+	height: 1%;
+}
