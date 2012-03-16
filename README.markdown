@@ -16,6 +16,7 @@ The Crocodoc plugin will create a new input box on the edit/add post form of eac
 
 The Crocodoc Plugin was developed by Michael Doss of www.mediahive.com, which is in no way associated with www.crocodoc.com.  This plugin is not officially supported by Crocodoc.  Neither Crocodoc, or the developer will respond to inquiries or be updating the plugin on a regular basis.
 
+The plugin currently supports the inclusion of a single public document per post.  If I have time, in the future I will update to allow multiple documents per post, and eventually work in including private documents.  If you are a developer and would like to implement these features, or contribute in any other way, visit the project on GitHub:  https://github.com/MikesNameIsMike/WordPress-Plugin-Crocodoc
 
 ##Usage##
 
