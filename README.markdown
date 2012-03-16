@@ -1,4 +1,4 @@
-# Crocodoc #
+## Crocodoc ##
 Contributors: MikesNameIsMike
 Tags: crocodoc, crocodocs, croc, upload, embed, convert, pdf, document, doc, docx, ppt, pptx, png, jpg
 Requires at least: 3.2.1
