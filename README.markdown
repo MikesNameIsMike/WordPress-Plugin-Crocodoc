@@ -12,7 +12,7 @@ The Crocodoc Plugin allows you to upload pdf, doc/docx, ppt/pptx, png and jpg fi
 
 Display documents and images in your posts using the Crocodoc API.  Embed .PDF, .DOC, .PPT, .PNG, and .JPG files into your posts.  Supports standard pages and posts as well as custom post types.
 
-The Crocodoc plugin will create a new input box on the edit/add post form of each desired post type.  The new input box allows for the inclusion of a document that will be sent to Crocodoc for conversion when the post is published or updated.  Through the use of ShortCode, you can embed the document into your post.
+The Crocodoc plugin will create a new input box on the edit/add post form of each desired post type.  The new input box allows for the inclusion of a document that will be sent to Crocodoc for conversion when the post is published or updated.  Authors can include the attached document in the post through the use of ShortCode, while theme developer can directly call a public function to embed any attached document to any page or post template.
 
 The Crocodoc Plugin was developed by Michael Doss of www.mediahive.com, which is in no way associated with www.crocodoc.com.  This plugin is not officially supported by Crocodoc.  Neither Crocodoc, or the developer will respond to inquiries or be updating the plugin on a regular basis.
 
@@ -26,9 +26,21 @@ In the Crocodoc Setting page ('Settings' >> 'Crocodoc') enter the api key in the
 
 When creating a post, use the Crocodoc uploader to select a file.  Once a file is uploaded and selected, you will be given options to make the document downloadable and/or editable.  When the post is published, the file will be uploaded to Crocodoc and associated with the given post.
 
+###Authors:###
 In the content section of your post use the ShortCode [crocodoc] to display the attached document.
 The document will be embedded at the default width and height of 500 x 700.
 Control the size of the document with parameters 'width' and 'height' : [crocodoc width###"300" height###"500"]
+
+###Theme Developers:###
+From anywhere in your theme, use the following function to insert crocodoc content into a page/post:
+
+echo(Crocodoc::get_embeded_doc({$postId}, {width}, {height}));
+
+Replace {postId} with the post ID associated with the document you want embedded.
+Replace {width} and {height} with the desired width and height of the document viewer.
+
+Example:
+echo(Crocodoc::get_embeded_doc($post->ID, '646', '805'));
 
 
 ## Installation ##
@@ -40,7 +52,7 @@ Control the size of the document with parameters 'width' and 'height' : [crocodo
 
 ## Frequently Asked Questions ##
 
-### Do I need a Crocodoc account account to use this plugin? ###
+### Do I need a Crocodoc account to use this plugin? ###
 
 Yes, you need a unique Crocodoc API key, which you can obtain for free from here: https://crocodoc.com/signup/
 

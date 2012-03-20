@@ -301,7 +301,7 @@ abstract class Crocodoc {
 	*  @return String 			: An iFrame with associated crocodoc file.
 	*  @author Michael Doss
 	*/
-	private static function get_embeded_doc($postID, $width='500', $height='700' ) {
+	public static function get_embeded_doc($postID, $width='500', $height='700' ) {
 		$uuid = get_post_meta($postID, 'croc_uuid', true);
 		$returnString="";
 		if($uuid) {
