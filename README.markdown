@@ -54,7 +54,7 @@ echo(Crocodoc::get_embeded_doc($post->ID, '646', '805'));
 
 ### Do I need a Crocodoc account to use this plugin? ###
 
-Yes, you need a unique Crocodoc API key, which you can obtain for free from here: https://crocodoc.com/signup/
+Yes, you need a unique Crocodoc API key, which you can obtain for free from here: https://crocodoc.com/get-started/
 
 ### I don't see the Crocodoc section on my create/edit post screen. ###
 
