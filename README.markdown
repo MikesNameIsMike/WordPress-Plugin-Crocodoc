@@ -10,6 +10,10 @@ The Crocodoc Plugin allows you to upload pdf, doc/docx, ppt/pptx, png and jpg fi
 
 ## Description ##
 
+**Crocodoc has released a new API and this plug-in may or may not work at the moment.
+**I will update the plugin before the end of June, and apologize for any inconvenience.
+**              -Michael Doss [6/6/2012]
+
 Display documents and images in your posts using the Crocodoc API.  Embed .PDF, .DOC, .PPT, .PNG, and .JPG files into your posts.  Supports standard pages and posts as well as custom post types.
 
 The Crocodoc plugin will create a new input box on the edit/add post form of each desired post type.  The new input box allows for the inclusion of a document that will be sent to Crocodoc for conversion when the post is published or updated.  Authors can include the attached document in the post through the use of ShortCode, while theme developer can directly call a public function to embed any attached document to any page or post template.
